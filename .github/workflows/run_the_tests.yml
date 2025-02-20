@@ -1,13 +1,11 @@
-
-
 name: RUN UI Test
-
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:  # 👈 This enables the "Run workflow" button
 
 jobs:
   build:
